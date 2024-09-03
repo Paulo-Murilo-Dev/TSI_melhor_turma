@@ -1,0 +1,180 @@
+<html lang="pt-BR">
+<head>
+    <link rel="icon" type="image/x-icon" href="/img/estrela.png">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSI!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #282c34;
+            color: #61dafb;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding-top: 60px;
+            text-align: center;
+        }
+
+        #contador {
+            font-size: 35px;
+        }
+
+        #titulo-curso {
+            font-size: 48px;
+            margin: 20px 0;
+        }
+
+        .imagem-container {
+            position: relative;
+        }
+
+        .imagem-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
+
+        .legenda {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #ffffff;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+        .content {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 8px;
+            color: #ffffff;
+        }
+
+        .content h2 {
+            margin-top: 0;
+            color: #61dafb;
+        }
+
+        .block {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            vertical-align: top;
+        }
+
+        .block img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .block p {
+            text-align: justify;
+        }
+
+        area {
+            outline: 2px solid rgba(0, 0, 0, 0.5);
+            outline-offset: -2px;
+        }
+    </style>
+</head>
+<body>
+    <div id="contador">Tempo para acabar o curso: </div>
+    <div id="titulo-curso">Turma TSI-IFSP 2023-2025</div>
+
+    <div class="imagem-container">
+        <img src=".//img/Rosana and friends.jpeg" usemap="#image-map" alt="Turma">
+        <div class="legenda">Nossa turma ❤️</div>
+        <map name="image-map">
+            <area target="" alt="Paulo Murilo" title="Paulo Murilo" href="https://www.linkedin.com/in/paulo-murilo/" coords="518,518,419,398" shape="rect">
+            <area target="" alt="Lucas" title="Lucas" href="/pessoas_malvadas.html" coords="335,520,248,403" shape="rect">
+            <area target="" alt="Sabrina" title="Sabrina" href="/pessoas_malvadas.html" coords="337,652,244,771" shape="rect">
+            <area target="" alt="Isa" title="Isa" href="/pessoas_malvadas.html" coords="501,644,387,764" shape="rect">
+            <area target="" alt="Bento" title="Bento" href="/pessoas_malvadas.html" coords="603,412,532,528" shape="rect">
+            <area target="" alt="Fábio" title="Fábio" href="/pessoas_malvadas.html" coords="674,399,612,492" shape="rect">
+            <area target="" alt="Luana" title="Luana" href="/pessoas_malvadas.html" coords="737,457,674,559" shape="rect">
+            <area target="" alt="Compacto" title="Compacto" href="/pessoas_malvadas.html" coords="849,640,778,753" shape="rect">
+            <area target="" alt="Aramis" title="Aramis" href="/pessoas_malvadas.html" coords="1062,588,970,712" shape="rect">
+            <area target="" alt="Phelipe" title="Phelipe" href="/pessoas_malvadas.html" coords="846,423,781,523" shape="rect">
+            <area target="" alt="Benicio" title="Benicio" href="/pessoas_malvadas.html" coords="907,430,857,517" shape="rect">
+            <area target="" alt="Fabricio" title="Fabricio" href="/pessoas_malvadas.html" coords="970,434,912,522" shape="rect">
+            <area target="" alt="Vitor" title="Vitor" href="/pessoas_malvadas.html" coords="1044,440,976,541" shape="rect">
+            <area target="" alt="Adil" title="Adil" href="/pessoas_malvadas.html" coords="1157,390,1096,480" shape="rect">
+            <area target="" alt="Lucas" title="Lucas" href="/pessoas_malvadas.html" coords="1188,468,1129,564" shape="rect">
+            <area target="" alt="Otoniel" title="Otoniel" href="/pessoas_malvadas.html" coords="1329,421,1264,507" shape="rect">
+            <area target="" alt="Murilo" title="Murilo" href="/pessoas_malvadas.html" coords="1370,651,1283,769" shape="rect">
+            <area target="" alt="Rosana" title="Rosana" href="/pessoas_malvadas.html" coords="664,654,582,786" shape="rect">
+            <area target="" alt="Larissa" title="Larissa" href="/pessoas_malvadas.html" coords="419,517,323,609" shape="rect">
+            <area target="" alt="Ventilador" title="Ventilador" href="ventilador.html" coords="861,64,686,259" shape="rect">
+        </map>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.rawgit.com/stowball/jQuery-rwdImageMaps/master/jquery.rwdImageMaps.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('img[usemap]').rwdImageMaps();
+            });
+        </script>
+    </div>
+
+    <div class="content">
+        <h2>Notícias da Turma</h2>
+        <div class="block">
+            <img src="/img/TSI_5.jpeg" alt="Imagem 1">
+            <p>Começa um novo semestre para a turma de TSI de 2023! A passagem do 3º para o 4º semestre foi marcada por muitas reviravoltas, mas o Arthur voltou!!!</p>
+        </div>
+        <div class="block">
+            <img src="/img/Rosana and friends.jpeg" alt="Imagem 2">
+            <p>A festinha com a turma da Rosana foi um sucesso!!! Algumas pessoas faltaram e perderam o bolo e não saíram na fotinha. 😔 E é claro, boa viagem, professora Rosana!!</p>
+        </div>
+        <div class="block">
+            <img src="/img/TSI_1.jpeg" alt="Imagem 3">
+            <p>A turma, por decisão unânime e democrática, elegeu a professora Rosana como a melhor professora de todo o instituto (classificando-a para o campeonato mundial).</p>
+        </div>
+        <div class="block">
+            <img src="/img/TSI_2.jpeg" alt="Imagem 4">
+            <p>O projeto com a Unifae e o curso de TSI para a criação de uma aplicação para o curso de Medicina está avançando em passos largos!</p>
+        </div>
+        <div class="block">
+            <img src="/img/TSI_3.jpeg" alt="Imagem 5">
+            <p>POLÊMICA!!! A professora Rosana nega todas as acusações de possuir alunos preferidos, mas há evidências que provam o contrário.</p>
+        </div>
+        <div class="block">
+            <img src="/img/TSI_4.jpeg" alt="Imagem 6">
+            <p>O aniversário da melhor professora do IFSP foi um SUCESSO!!! Com direito a bolo e refrigerante. Com certeza será uma honra repetir o evento no ano que vem!</p>
+        </div>
+    </div>
+
+    <script>
+        var dataFinal = new Date("2025-12-25T00:00:00").getTime();
+
+        function atualizarContador() {
+            var agora = new Date().getTime();
+            var diferenca = dataFinal - agora;
+
+            var dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+            var horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
+            var segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+
+            document.getElementById("contador").innerHTML = 
+                "Tempo para acabar o curso: " + dias + "d " + horas + "h " + minutos + "m " + segundos + "s ";
+
+            if (diferenca < 0) {
+                clearInterval(intervalo);
+                document.getElementById("contador").innerHTML = "Tempo esgotado";
+            }
+        }
+
+        var intervalo = setInterval(atualizarContador, 1000);
+    </script>
+</body>
+</html>
