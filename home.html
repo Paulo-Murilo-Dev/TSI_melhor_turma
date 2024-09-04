@@ -22,11 +22,12 @@
 
         #contador {
             font-size: 35px;
+            color: #eb1414;
         }
 
         #titulo-curso {
             font-size: 48px;
-            margin: 20px 0;
+            margin: 10px 0;
         }
 
         .imagem-container {
@@ -62,14 +63,19 @@
 
         .content h2 {
             margin-top: 0;
-            color: #61dafb;
+            color: #f7fdff;
+        }
+
+        .h1 {
+            margin-top: 0;
+            color: #f7fdff;
         }
 
         .block {
             display: inline-block;
-            width: 30%;
-            margin: 10px;
             vertical-align: top;
+            box-sizing: border-box;
+            margin-left: 10px;
         }
 
         .block img {
@@ -81,6 +87,18 @@
             text-align: justify;
         }
 
+        @media (min-width: 768px) {
+            .block {
+                width: calc(50% - 20px); /* Ajusta a largura para telas maiores */
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .block {
+                width: calc(33.33% - 20px); /* Ajusta a largura para telas ainda maiores */
+            }
+        }
+
         area {
             outline: 2px solid rgba(0, 0, 0, 0.5);
             outline-offset: -2px;
@@ -88,9 +106,10 @@
     </style>
 </head>
 <body>
-    <div id="contador">Tempo para acabar o curso: </div>
     <div id="titulo-curso">Turma TSI-IFSP 2023-2025</div>
 
+    <div id="contador">Tempo para acabar o curso: </div>
+<br>
     <div class="imagem-container">
         <img src=".//img/Rosana and friends.jpeg" usemap="#image-map" alt="Turma">
         <div class="legenda">Nossa turma ❤️</div>
@@ -141,15 +160,15 @@
         </div>
         <div class="block">
             <img src="/TSI_melhor_turma/img/TSI_2.jpeg" alt="Imagem 4">
-            <p>O projeto com a Unifae e o curso de TSI para a criação de uma aplicação para o curso de Medicina está avançando em passos largos!</p>
+            <p>O projeto com a Unifesp será coordenado pela professora Sabrina, com o apoio do professor Fábio. Estamos muito animados para este novo projeto!</p>
         </div>
         <div class="block">
             <img src="/TSI_melhor_turma/img/TSI_3.jpeg" alt="Imagem 5">
-            <p>POLÊMICA!!! A professora Rosana nega todas as acusações de possuir alunos preferidos, mas há evidências que provam o contrário.</p>
+            <p>A turma também participou de um workshop sobre desenvolvimento web, e todos estão agora mais empolgados do que nunca com o curso!</p>
         </div>
         <div class="block">
             <img src="/TSI_melhor_turma/img/TSI_4.jpeg" alt="Imagem 6">
-            <p>O aniversário da melhor professora do IFSP foi um SUCESSO!!! Com direito a bolo e refrigerante. Com certeza será uma honra repetir o evento no ano que vem!</p>
+            <p>Uma grande conquista para a turma! O projeto desenvolvido em conjunto com a comunidade local foi um sucesso e está sendo amplamente elogiado.</p>
         </div>
     </div>
 
